@@ -26,10 +26,12 @@ public class SampleDomain {
 	}
 	
 	public boolean anotherFunction() {
+		System.out.println("Called anotherFunction() from SampleDomain");
 		return true;
 	}
 	
 	public boolean anotherFunction(SampleDomain sampleDomain) {
+		System.out.println("Called anotherFunction(SampleDomain sampleDomain) from SampleDomain");
 		return true;
 	}
 	

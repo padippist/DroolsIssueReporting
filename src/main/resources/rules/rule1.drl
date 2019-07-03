@@ -38,29 +38,6 @@ end
 
 
 
-rule "rule 1.4"
-  when
-    $sampleDomain: SampleDomain(anotherFunction())
-  then
-    System.out.println("Rule 1.4 fired");
-    modify($sampleDomain){
-    		setInstanceVariable1(3)
-    }
-end
-
-
-rule "rule 1.5"
-  when
-    $sampleDomain: SampleDomain(anotherFunction($sampleDomain))
-  then
-    System.out.println("Rule 1.5 fired");
-    modify($sampleDomain){
-    		setInstanceVariable3(4)
-    }
-end
-
-
-
 
 
 

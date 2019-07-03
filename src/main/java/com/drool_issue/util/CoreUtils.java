@@ -4,12 +4,12 @@ import com.drool_issue.domain.SampleDomain;
 
 public class CoreUtils {
 	
-	public static boolean anotherFunction() {
+	public boolean anotherFunction() {
 		System.out.println("anotherFunction() inside CoreUtils");
 		return true;
 	}
 	
-	public static boolean anotherFunction(SampleDomain sampleDomain) {
+	public boolean anotherFunction(SampleDomain sampleDomain) {
 		System.out.println("anotherFunction(SampleDomain sampleDomain) inside CoreUtils");
 		return true;
 	}

@@ -25,6 +25,14 @@ public class SampleDomain {
 		this.instanceVariable3 = instanceVariable3;
 	}
 	
+	public boolean anotherFunction() {
+		return true;
+	}
+	
+	public boolean anotherFunction(SampleDomain sampleDomain) {
+		return true;
+	}
+	
 	
 
 }

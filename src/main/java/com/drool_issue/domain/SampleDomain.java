@@ -39,4 +39,9 @@ public class SampleDomain {
 		return sampleDomain;
 	}
 	
+	public SampleDomain getAnotherFunction() {
+		System.out.println("getAnotherFunction()");
+		return this;
+	}
+	
 }

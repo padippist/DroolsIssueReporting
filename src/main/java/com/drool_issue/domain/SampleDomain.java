@@ -4,6 +4,7 @@ public class SampleDomain {
 	private int instanceVariable1;
 	private String instanceVariable2;
 	private int instanceVariable3;
+	private int instanceVariable4;
 	
 	
 	public int getInstanceVariable1() {
@@ -25,6 +26,17 @@ public class SampleDomain {
 		this.instanceVariable3 = instanceVariable3;
 	}
 	
+	public int getInstanceVariable4() {
+		return instanceVariable4;
+	}
+	public void setInstanceVariable4(int instanceVariable4) {
+		this.instanceVariable4 = instanceVariable4;
+	}
 	
-
+	public SampleDomain getAnotherFunction(SampleDomain sampleDomain) {
+		sampleDomain.setInstanceVariable4(5);
+		System.out.println("getAnotherFunction(SampleDomain sampleDomain)");
+		return sampleDomain;
+	}
+	
 }

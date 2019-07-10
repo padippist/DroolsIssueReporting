@@ -18,7 +18,7 @@ end
 
 rule "rule 1.2"
   when
-    $sampleDomain: SampleDomain(CoreUtils.anotherFunction())
+    $sampleDomain: SampleDomain(getAnotherFunction($sampleDomain) == this)
   then
     System.out.println("Rule 1.2 fired");
     modify($sampleDomain){
@@ -26,15 +26,8 @@ rule "rule 1.2"
     }
 end
 
-rule "rule 1.3"
-  when
-    $sampleDomain: SampleDomain(CoreUtils.anotherFunction($sampleDomain))
-  then
-    System.out.println("Rule 1.3 fired");
-    modify($sampleDomain){
-    		setInstanceVariable3(4)
-    }
-end
+
+
 
 
 

@@ -20,7 +20,7 @@
 		<dependency>
 			<groupId>org.drools</groupId>
 			<artifactId>drools-compiler</artifactId>
-			<version>7.20.0.Final</version>
+			<version>7.23.0.Final</version>
 		</dependency>
 	</dependencies>
 </project>
